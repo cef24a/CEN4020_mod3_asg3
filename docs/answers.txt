@@ -1,3 +1,9 @@
+GitLab Tutorials : 10/20/2026 & 10/21/2026
+
+GitHub Acc. Creation : 10/21/2026
+
+repo : https://github.com/cef24a/CEN4020_mod3_asg3.git
+
 1. Paste the console output you saved at the end of step 3.C (2 points)
 	
 	"branch 'master' set up to track 'origin/master'."
@@ -38,7 +44,7 @@ get this information (4 points)
 6. What command would you use to see the commits where “Vehicle.h” was one of 
 the committed files? (4 points)
 	
-	COMMAND : git log .\Vehicle.h
+	COMMAND : git log .\Vehicle.h (or git log --follow .\Vehicle.h)
 
 7. What command would you use to see the commits whose commit message contains 
 the word “file”? (4 points)
@@ -74,10 +80,27 @@ What is polymorphism? (III) What is encapsulation? (6 points)
 9.  What is the main difference between the “Dictator and Lieutenants” workflow
 and the “Integration manager” workflow? (5 points)
 
-	
+	The Integration Manager Workflow has the integration manager as one person
+	that will pull from each private developer's public repository. This is 
+	different in the Dictator and Lieutenants workflow because not only is there
+	now a middle-man between the person pushing to the repository and the basic
+	developers, but in the Dictator workflow, the developers and lieutenants
+	push everything to their higher-ups rather than making one integration
+	manager responsible for all of the conflict resolution. 
 
 
 10. How would a team of 100 developers benefit from following the “Dictator and 
 Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
 
-	
+	The Dictator and Lieutenants workflow would work far better for larger teams
+	(especially 100 developers) because there would be a stricter process for 
+	putting code into the official repository. In the Dictator workflow, there 
+	is less risk of one person accidentally messing up the entire repository / 
+	something catastrophically bad happening because there are more intermediate
+	stages / separation between the developers and the 'blessed repository'. For
+	example, if one of the centralized workflow developers did a blank push that
+	deleted the most recent branch's commit, then there is no way to make sure
+	that this can be undone. In the dictator workflow, unless the dictator is
+	the one to make this kind of mistake, there is very little chance of
+	something like this happening due to only one person being allowed to push/ 
+	finalize changes to the official repository. 
