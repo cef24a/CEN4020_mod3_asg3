@@ -1,0 +1,83 @@
+1. Paste the console output you saved at the end of step 3.C (2 points)
+	
+	"branch 'master' set up to track 'origin/master'."
+	(For context, I was setting up the Git Desktop app at the same time, 
+	and I misclicked and pushed the real changes on a separate push. This 
+	push was basically the 2nd official push telling me that everything was
+	already up to date.)
+
+2. How many commits have been done to the repository (not only by you, but by an
+yone) so far? Write the git command you used to get this information (4 points)
+	
+	8 total! 6 from Esteban Parra and 2 from me (cefroh & cef24a... still 
+	working on fixing the double account issue with my laptop).
+	COMMAND : git log
+
+3. When was the README.md  file modified last? Write the git command you used to
+get this information (4 points)
+	
+	Wed Oct 21 20:49:44 2026 by me 
+	COMMAND : git log README.md
+
+4. Mention two reasons why branches are used in a Git repository (4 points)
+	
+	a. keep features under testing away from the main area (isolation / 
+	quarantining the code)
+	
+	b. allowing multiple people to work on the code at the same time without 
+	accidentally working over each other's code / keeping everyone's work 
+	clean, organized, and understandable
+
+5. What is the difference between git log and git status? (4 points)
+	
+	"git log" shows what commits have already been made previously as well as 
+	their corresponding information, but "git status" shows what is about to be 
+	commited (what is staged to be committed soon, if a file has been modified 
+	but not added/ staged yet, etc.)
+
+6. What command would you use to see the commits where “Vehicle.h” was one of 
+the committed files? (4 points)
+	
+	COMMAND : git log .\Vehicle.h
+
+7. What command would you use to see the commits whose commit message contains 
+the word “file”? (4 points)
+	
+	COMMAND : git log --grep="file"
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) 
+What is polymorphism? (III) What is encapsulation? (6 points)
+	
+	I. Inheritance is when one class *inherits* the attributes of another class. 
+	In this repo's code, it could be said that the Bike and Car classes
+	*inherit* the Vehicle class's attributes because bikes and cars are kinds of
+	vehicles. This is evident in how the car and bike classes have the
+	properties of a vehicle like 'brand' and 'model'.
+	
+	II. Polymorphism sort of expands on inheritance in that if one object
+	inherits from another object, they may be able to override a parent method
+	with their own unique version. An example of this in the code is how the Car
+	object can override the regular Vehicle object's toString() method. While a 
+	Vehicle would just respond with the string describing the Vehicle's brand
+	and model, if the code sees that the Vehicle is--in fact--a car, then it can
+	give the special response of the PoweredVehicle's toString() method 
+	(which just gives us the fuel type) and add on the engine size at the end 
+	of the string.
+	
+	III. Encapsulation is when attributes of a class are only accessed via
+	getter and setter methods so as to not overwrite / lose important 
+	information. For a Car object, this would be like how we can get and set the
+	engine size, but not to anything we want. Because it wouldnt make sense to
+	have size 'yellow' engine, for example, we only allow the options to be
+	'small', 'medium', 'grande', or 'unknown' via this method. 
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow
+and the “Integration manager” workflow? (5 points)
+
+	
+
+
+10. How would a team of 100 developers benefit from following the “Dictator and 
+Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+
+	
